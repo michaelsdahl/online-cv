@@ -9,18 +9,18 @@ sidebar:
 
   # Profile information
   name: Michael Slavensky Dahl
-  tagline: Professionelt bestyrelsesmedlem | Professor
+  tagline: Professionelt bestyrelsesmedlem
   avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
   email: michael@northland.dk
   phone: +45 99 40 75 13
-  timezone: Europe/Copenhagen
-  citizenship: Danmark
+  timezone:
+  citizenship:
   website: # Include the full website URL, including "http://" or "https://".
-  linkedin: michaelsdahl
+  linkedin: msdahl
   xing:
-  github: michaelsdahl
+  github:
   telegram: # add your nickname without '@' sign
   gitlab:
   bitbucket:
@@ -35,28 +35,8 @@ sidebar:
   pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
 
   languages:
-    title: Sprog
-    info:
-    - idiom: Dansk
-      level: Modersmål
-
-    - idiom: Engelsk
-      level: Professionel
-
-    - idiom: Norsk
-      level: Professionel
 
   interests:
-    title: Interesser
-    info:
-    - item: Bestyrelsesarbejde
-      link:
-
-    - item: Strategisk udvikling
-      link:
-
-    - item: Corporate governance
-      link:
 
 
 career-profile:
@@ -72,26 +52,26 @@ education:
   title: Uddannelse
   info:
   - degree: Bestyrelsesarbejde i Erhvervsfonde
-    university: CBS Bestyrelsesuddannelserne
+    university: <a href="https://www.cbsbestyrelsesuddannelserne.dk/" target="_blank">CBS Bestyrelsesuddannelserne</a>
     time: 2020
     details: |
       Specialiseret uddannelse i bestyrelsesarbejde for erhvervsdrivende fonde.
 
   - degree: Bestyrelsesarbejde i Finansielle Virksomheder
-    university: CBS Bestyrelsesuddannelserne
+    university: <a href="https://www.cbsbestyrelsesuddannelserne.dk/" target="_blank">CBS Bestyrelsesuddannelserne</a>
     time: 2019
     details: |
       Lovpligtig uddannelse for fit-and-proper i finansielle virksomheder.
 
   - degree: Ph.D. innovations- og industriøkonomi
-    university: Aalborg Universitet
+    university: <a href="https://www.aau.dk/" target="_blank">Aalborg Universitet</a>
     time: 2014
     details: |
       Doktorgrad inden for innovations- og industriøkonomi med fokus på
       strategisk udvikling og økonomisk analyse.
 
   - degree: Cand.oecon.
-    university: Aalborg Universitet
+    university: <a href="https://www.aau.dk/" target="_blank">Aalborg Universitet</a>
     time: 1999
     details: |
       Kandidatgrad i økonomi fra Aalborg Universitet.
@@ -101,31 +81,31 @@ experiences:
   info:
   - role: Bestyrelsesmedlem
     time: 2025 - nu
-    company: Børneulykkesfonden
+    company: <a href="https://børneulykkesfonden.dk/" target="_blank">Børneulykkesfonden</a>
     details: |
       Bestyrelsesmedlem i velgørende fond for børns sikkerhed.
 
   - role: Bestyrelsesformand
     time: 2024 - nu
-    company: Fonden Musikkens Hus
+    company: <a href="https://musikkenshus.dk/" target="_blank">Fonden Musikkens Hus</a>
     details: |
       Ledelse af kulturel fond for musikhuset i Aalborg.
 
   - role: Næstformand
     time: 2024 - nu
-    company: Aalborg Symfoniorkester
+    company: <a href="https://musikkenshus.dk/aalborg-symfoniorkester" target="_blank">Aalborg Symfoniorkester</a>
     details: |
       Strategisk ledelse af professionelt symfoniorkester.
 
   - role: Bestyrelsesmedlem
     time: 2022 - nu
-    company: Tænketanken EQUALIS
+    company: <a href="https://equalis.dk/" target="_blank">Tænketanken EQUALIS</a>
     details: |
       Strategisk rådgivning og udvikling af samfundsmæssige løsninger.
 
   - role: Bestyrelsesformand
     time: 2017 - nu
-    company: Spar Nord Fonden
+    company: <a href="https://www.sparnordfonden.dk/" target="_blank">Spar Nord Fonden</a>
     details: |
       Menigt medlem fra 2013, Næstformand fra 2016, Formand fra 2017.
         - Ledelse af erhvervsdrivende fond
@@ -142,34 +122,61 @@ board-experience:
 
   - role: Bestyrelsesmedlem
     time: 2017 - 2025
-    company: Rigmor Nielsens Fond
+    company: <a href="https://rigmornielsensfond.dk/" target="_blank">Rigmor Nielsens Fond</a>
     details: |
       Bestyrelsesmedlem i fond.
+
+board-competencies:
+  title: Bestyrelseskompetencer
+  info:
+  - area: Ledelse af erhvervsdrivende fonde
+    details: |
+      Governance for fonde og generel corporate governance
+
+  - area: Professionalisering af bestyrelsesprocesser
+    details: |
+      Kompetencekortlægning og succession
+
+  - area: Økonomi og investeringer
+    details: |
+      Dybe kompetencer omkring økonomi, investeringer og strategisk udvikling
+
+  - area: Samarbejde med direktion
+    details: |
+      Udvikling af samarbejde med direktion og organisation, herunder rekruttering af direktør og nøglepersoner
+
+  - area: Bestyrelsesledelse
+    details: |
+      Fokus på optimering af samspil mellem alle kompetencer i bestyrelsen
+
+  - area: Stakeholder management
+    details: |
+      Ledelse af samarbejde med centrale stakeholders, eks. mellem ejerfond og datterselskab
 
 employment:
   title: Ansættelser
   info:
   - role: Professor II
     time: 2021 - nu
-    company: NHH Norges Handelshøyskole, Bergen
+    company: <a href="https://www.nhh.no/en/" target="_blank">NHH Norges Handelshøyskole, Bergen</a>
     details: |
       Deltidsstilling ved Norges førende handelshøjskole.
 
   - role: Professor
     time: 2020 - nu
-    company: Aalborg University Business School
+    company: <a href="https://www.business.aau.dk/" target="_blank">Aalborg University Business School</a>
     details: |
       Fuld professor ved Aalborg Universitet.
 
   - role: Professor, Viceinstitutleder
     time: 2015 - 2020
-    company: Aarhus Universitet
+    company: <a href="https://mgmt.au.dk/" target="_blank">Aarhus Universitet</a>
     details: |
       Institut for Virksomhedsledelse.
 
   - role: Professor
     time: 2010 - 2015
-    company: Aalborg Universitet
+    company: <a href="https://www.business.aau.dk/" target="_blank">Aalborg Universitet</a>
     details: |
       Institut for Økonomi og Ledelse.
 

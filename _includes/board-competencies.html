@@ -1,0 +1,26 @@
+{% assign board_competencies = site.data.data.board-competencies %}
+{% if board_competencies %}
+<section class="section skills-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-cogs fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ board_competencies.title }}
+  </h2>
+
+  <div class="skillset">
+    {% for competency in board_competencies.info %}
+    <div class="item">
+      <h3 class="level-title">{{ competency.area }}</h3>
+      <div class="level-bar">
+        <div class="details">
+          {{ competency.details | markdownify }}
+        </div>
+      </div>
+    </div><!--//item-->
+    {% endfor %}
+  </div>
+
+</section><!--//section-->
+{% endif %}
