@@ -15,7 +15,22 @@
     <div class="meta">
 
       <div class="upper-row">
-        <h3 class="job-title">{{ experience.role }}, {{ experience.company }}</h3>
+        <h3 class="job-title">
+          {% if experience.company contains 'Børneulykkesfonden' %}
+            <i class="fas fa-heart" style="color: #e74c3c; margin-right: 8px;"></i>
+          {% elsif experience.company contains 'Musikkens Hus' %}
+            <i class="fas fa-music" style="color: #9b59b6; margin-right: 8px;"></i>
+          {% elsif experience.company contains 'Symfoniorkester' %}
+            <i class="fas fa-violin" style="color: #3498db; margin-right: 8px;"></i>
+          {% elsif experience.company contains 'EQUALIS' %}
+            <i class="fas fa-lightbulb" style="color: #f39c12; margin-right: 8px;"></i>
+          {% elsif experience.company contains 'Spar Nord' %}
+            <i class="fas fa-university" style="color: #27ae60; margin-right: 8px;"></i>
+          {% else %}
+            <i class="fas fa-briefcase" style="color: #34495e; margin-right: 8px;"></i>
+          {% endif %}
+          {{ experience.role }}, {{ experience.company }}
+        </h3>
         <div class="time">{{ experience.time }}</div>
       </div><!--//upper-row-->
 
