@@ -1,0 +1,177 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+  position: right # position of the sidebar : left or right
+  about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  education: True # set to False if you want education in main section instead of in sidebar
+
+  # Profile information
+  name: Michael Slavensky Dahl
+  tagline: Professionelt bestyrelsesmedlem | Professor
+  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+  # Sidebar links
+  email: michael@northland.dk
+  phone: +45 99 40 75 13
+  timezone: Europe/Copenhagen
+  citizenship: Danmark
+  website: # Include the full website URL, including "http://" or "https://".
+  linkedin: michaelsdahl
+  xing:
+  github: michaelsdahl
+  telegram: # add your nickname without '@' sign
+  gitlab:
+  bitbucket:
+  bluesky: # Specify your full Bluesky handle
+  twitter: #
+  stack-overflow: # Number/Username, e.g. 123456/alandoe
+  codewars:
+  goodreads: # Number-Username, e.g. 123456-alandoe
+  mastodon: # Please include your full Mastodon link here.
+  hackerrank: # Please provide your HackerRank username.
+  leetcode: # Please provide your LeetCode username.
+  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+
+  languages:
+    title: Sprog
+    info:
+    - idiom: Dansk
+      level: Modersmål
+
+    - idiom: Engelsk
+      level: Professionel
+
+    - idiom: Norsk
+      level: Professionel
+
+  interests:
+    title: Interesser
+    info:
+    - item: Bestyrelsesarbejde
+      link:
+
+    - item: Strategisk udvikling
+      link:
+
+    - item: Corporate governance
+      link:
+
+
+career-profile:
+  title: Profil
+  summary: |
+    Jeg er en visionær og værdidrevet bestyrelsesleder med stærke strategiske og analytiske kompetencer.
+    Jeg arbejder struktureret, reflekteret og målrettet med at skabe værdi gennem professionelt bestyrelsesarbejde.
+
+    Mit brede sæt af kompetence giver mig et solidt overblik og en evne til at navigere sikkert i komplekse og foranderlige situationer.
+    Jeg er rolig, humoristisk og lyttende med høj integritet og stor respekt for andres perspektiver og fagligheder.
+
+education:
+  title: Uddannelse
+  info:
+  - degree: Bestyrelsesarbejde i Erhvervsfonde
+    university: CBS Bestyrelsesuddannelserne
+    time: 2020
+    details: |
+      Specialiseret uddannelse i bestyrelsesarbejde for erhvervsdrivende fonde.
+
+  - degree: Bestyrelsesarbejde i Finansielle Virksomheder
+    university: CBS Bestyrelsesuddannelserne
+    time: 2019
+    details: |
+      Lovpligtig uddannelse for fit-and-proper i finansielle virksomheder.
+
+  - degree: Ph.D. innovations- og industriøkonomi
+    university: Aalborg Universitet
+    time: 2014
+    details: |
+      Doktorgrad inden for innovations- og industriøkonomi med fokus på
+      strategisk udvikling og økonomisk analyse.
+
+  - degree: Cand.oecon.
+    university: Aalborg Universitet
+    time: 1999
+    details: |
+      Kandidatgrad i økonomi fra Aalborg Universitet.
+
+experiences:
+  title: Bestyrelsesposter
+  info:
+  - role: Bestyrelsesmedlem
+    time: 2025 - nu
+    company: Børneulykkesfonden
+    details: |
+      Bestyrelsesmedlem i velgørende fond for børns sikkerhed.
+
+  - role: Bestyrelsesformand
+    time: 2024 - nu
+    company: Fonden Musikkens Hus
+    details: |
+      Ledelse af kulturel fond for musikhuset i Aalborg.
+
+  - role: Næstformand
+    time: 2024 - nu
+    company: Aalborg Symfoniorkester
+    details: |
+      Strategisk ledelse af professionelt symfoniorkester.
+
+  - role: Bestyrelsesmedlem
+    time: 2022 - nu
+    company: Tænketanken EQUALIS
+    details: |
+      Strategisk rådgivning og udvikling af samfundsmæssige løsninger.
+
+  - role: Bestyrelsesformand
+    time: 2017 - nu
+    company: Spar Nord Fonden
+    details: |
+      Menigt medlem fra 2013, Næstformand fra 2016, Formand fra 2017.
+        - Ledelse af erhvervsdrivende fond
+        - Strategisk udvikling og governance
+
+board-experience:
+  title: Bestyrelseserfaringer
+  info:
+  - role: Bestyrelsesmedlem
+    time: 2020 - 2025
+    company: NOVI Innovation A/S
+    details: |
+      NOVI A/S's investeringsselskab.
+
+  - role: Bestyrelsesmedlem
+    time: 2017 - 2025
+    company: Rigmor Nielsens Fond
+    details: |
+      Bestyrelsesmedlem i fond.
+
+employment:
+  title: Ansættelser
+  info:
+  - role: Professor II
+    time: 2021 - nu
+    company: NHH Norges Handelshøyskole, Bergen
+    details: |
+      Deltidsstilling ved Norges førende handelshøjskole.
+
+  - role: Professor
+    time: 2020 - nu
+    company: Aalborg University Business School
+    details: |
+      Fuld professor ved Aalborg Universitet.
+
+  - role: Professor, Viceinstitutleder
+    time: 2015 - 2020
+    company: Aarhus Universitet
+    details: |
+      Institut for Virksomhedsledelse.
+
+  - role: Professor
+    time: 2010 - 2015
+    company: Aalborg Universitet
+    details: |
+      Institut for Økonomi og Ledelse.
+
+footer: >
+  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

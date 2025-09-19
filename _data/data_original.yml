@@ -1,0 +1,321 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+  position: right # position of the sidebar : left or right
+  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  education: True # set to False if you want education in main section instead of in sidebar
+
+  # Profile information
+  name: Michael Slavensky Dahl
+  tagline: Professionelt bestyrelsesmedlem | Professor
+  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+  # Sidebar links
+  email: michael@northland.dk
+  phone: +45 99 40 75 13
+  timezone: Europe/Copenhagen # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  citizenship: Danmark
+  website: # Include the full website URL, including "http://" or "https://".
+  linkedin: michaelsdahl
+  xing:
+  github: michaelsdahl
+  telegram: # add your nickname without '@' sign
+  gitlab:
+  bitbucket:
+  bluesky: # Specify your full Bluesky handle
+  twitter: #
+  stack-overflow: # Number/Username, e.g. 123456/alandoe
+  codewars:
+  goodreads: # Number-Username, e.g. 123456-alandoe
+  mastodon: # Please include your full Mastodon link here.
+  hackerrank: # Please provide your HackerRank username.
+  leetcode: # Please provide your LeetCode username.
+  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+
+  languages:
+    title: Sprog
+    info:
+    - idiom: Dansk
+      level: Modersmål
+
+    - idiom: Engelsk
+      level: Professionel
+
+    - idiom: Norsk
+      level: Professionel
+
+  interests:
+    title: Interesser
+    info:
+    - item: Bestyrelsesarbejde
+      link:
+
+    - item: Strategisk udvikling
+      link:
+
+    - item: Corporate governance
+      link:
+
+
+career-profile:
+  title: Profil
+  summary: |
+    Jeg er en visionær og værdidrevet bestyrelsesleder med stærke strategiske og analytiske kompetencer.
+    Jeg arbejder struktureret, reflekteret og målrettet med at skabe værdi gennem professionelt bestyrelsesarbejde.
+
+    Mit brede sæt af kompetence giver mig et solidt overblik og en evne til at navigere sikkert i komplekse og foranderlige situationer.
+    Jeg er rolig, humoristisk og lyttende med høj integritet og stor respekt for andres perspektiver og fagligheder.
+education:
+  title: Uddannelse
+  info:
+  - degree: Bestyrelsesarbejde i Erhvervsfonde
+    university: CBS Bestyrelsesuddannelserne
+    time: 2020
+    details: |
+      Specialiseret uddannelse i bestyrelsesarbejde for erhvervsdrivende fonde.
+
+  - degree: Bestyrelsesarbejde i Finansielle Virksomheder
+    university: CBS Bestyrelsesuddannelserne
+    time: 2019
+    details: |
+      Lovpligtig uddannelse for fit-and-proper i finansielle virksomheder.
+
+  - degree: Ph.D. innovations- og industriøkonomi
+    university: Aalborg Universitet
+    time: 2014
+    details: |
+      Doktorgrad inden for innovations- og industriøkonomi med fokus på
+      strategisk udvikling og økonomisk analyse.
+
+  - degree: Cand.oecon.
+    university: Aalborg Universitet
+    time: 1999
+    details: |
+      Kandidatgrad i økonomi fra Aalborg Universitet.
+
+experiences:
+  title: Bestyrelsesposter
+  info:
+  - role: Bestyrelsesmedlem
+    time: 2025 - nu
+    company: Børneulykkesfonden
+    details: |
+      Bestyrelsesmedlem i velgørende fond for børns sikkerhed.
+
+  - role: Bestyrelsesformand
+    time: 2024 - nu
+    company: Fonden Musikkens Hus
+    details: |
+      Ledelse af kulturel fond for musikhuset i Aalborg.
+
+  - role: Næstformand
+    time: 2024 - nu
+    company: Aalborg Symfoniorkester
+    details: |
+      Strategisk ledelse af professionelt symfoniorkester.
+
+  - role: Bestyrelsesmedlem
+    time: 2022 - nu
+    company: Tænketanken EQUALIS
+    details: |
+      Strategisk rådgivning og udvikling af samfundsmæssige løsninger.
+
+  - role: Bestyrelsesformand
+    time: 2017 - nu
+    company: Spar Nord Fonden
+    details: |
+      Menigt medlem fra 2013, Næstformand fra 2016, Formand fra 2017.
+        - Ledelse af erhvervsdrivende fond
+        - Strategisk udvikling og governance
+
+board-experience:
+  title: Bestyrelseserfaringer
+  info:
+  - role: Bestyrelsesmedlem
+    time: 2020 - 2025
+    company: NOVI Innovation A/S
+    details: |
+      NOVI A/S's investeringsselskab.
+
+  - role: Bestyrelsesmedlem
+    time: 2017 - 2025
+    company: Rigmor Nielsens Fond
+    details: |
+      Bestyrelsesmedlem i fond.
+
+employment:
+  title: Ansættelser
+  info:
+  - role: Professor II
+    time: 2021 - nu
+    company: NHH Norges Handelshøyskole, Bergen
+    details: |
+      Deltidsstilling ved Norges førende handelshøjskole.
+
+  - role: Professor
+    time: 2020 - nu
+    company: Aalborg University Business School
+    details: |
+      Fuld professor ved Aalborg Universitet.
+
+  - role: Professor, Viceinstitutleder
+    time: 2015 - 2020
+    company: Aarhus Universitet
+    details: |
+      Institut for Virksomhedsledelse.
+
+  - role: Professor
+    time: 2010 - 2015
+    company: Aalborg Universitet
+    details: |
+      Institut for Økonomi og Ledelse.
+
+certifications:
+  title: Certifications
+  list:
+  - name: CV Builder
+    start: 2020
+    end: 2021
+    organization: Microsoft
+    credentialid: 111-222
+    credentialurl: www.google.com
+    credentialname: Google
+    details: |
+      Details about cert. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit.
+      Nullam eget orci purus. Nullam ultrices neque nibh.
+      Aenean fermentum, felis vulputate suscipit accumsan,
+      sem enim bibendum augue, sed convallis arcu lacus at dui.
+      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+      Praesent venenatis erat non augue suscipit consectetur.
+
+      Second paragraph. Sed eleifend enim ante, vitae efficitur purus
+      fringilla vel. Ut euismod, sem sed vulputate venenatis,
+      justo diam viverra velit, sed rhoncus leo leo eu justo.
+      Suspendisse placerat risus ante, sed porta nisi blandit at.
+  - name: Git learning
+    start: 2019
+    end:
+    organization: Microsoft
+    credentialid: 111-222
+    credentialurl: www.github.com
+    credentialname: Github
+    details: |
+      Older certification. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit.
+      Nullam eget orci purus. Nullam ultrices neque nibh.
+      Aenean fermentum, felis vulputate suscipit accumsan,
+      sem enim bibendum augue, sed convallis arcu lacus at dui.
+      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+      Praesent venenatis erat non augue suscipit consectetur.
+
+projects:
+  title: Projects
+  intro: >
+    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+  assignments:
+  - title: Velocity
+    link: "#hook"
+    tagline: "A responsive website template designed to help startups promote, market and sell their products."
+
+  - title: DevStudio
+    link: "#"
+    tagline: "A responsive website template designed to help web developers/designers market their services."
+
+  - title: Tempo
+    link: "#"
+    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+  - title: Atom
+    link: "#"
+    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+  - title: Delta
+    link: "#"
+    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
+oss:
+  title: OSS Contributions
+  intro: >
+    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+  contributions:
+  - title: Tempo
+    link: "#"
+    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+  - title: Atom
+    link: "#"
+    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+  - title: Delta
+    link: "#"
+    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
+publications:
+  title: Publications
+  intro: |
+    You can list your publications in this section. Lorem ipsum dolor sit
+    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+    bibendum fringilla a eu lectus.
+  papers:
+  - title: The Art of Computer Programming
+    link: "#"
+    authors: Donald E. Knuth
+    conference: Addison-Wesley, 1968
+
+  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+    link: "#"
+    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+
+  - title: A syntax directed compiler for Algol 60
+    link: "#"
+    authors: Edgar T. Irons
+    conference: "Comm. ACM 4 (1961), 51–55"
+
+recommendations:
+  title: Recommendations
+  list:
+  - person: Yareli Perez
+    email: perezyareli@example.com
+    phone: 012 345 6789
+    role: General Director at example.com
+    recommendation: |
+      Alan Doe is a super employee!
+  - person: Lara Henderson
+    email: larah@example.com
+    phone: 012 345 6789
+    role: General Director at example.com
+    recommendation: |
+      I would like to work with Alan Doe again!
+
+      He is a great employee!
+
+skills:
+  title: Skills &amp; Proficiency
+
+  toolset:
+  - name: Python & Django
+    level: 98%
+
+  - name: Javascript & jQuery
+    level: 98%
+
+  - name: Angular
+    level: 98%
+
+  - name: HTML5 & CSS
+    level: 95%
+
+  - name: Ruby on Rails
+    level: 85%
+
+  - name: Sketch & Photoshop
+    level: 60%
+
+footer: >
+  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
