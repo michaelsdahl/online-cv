@@ -15,7 +15,7 @@ sidebar:
   # Sidebar links
   email: michael@northland.dk
   phone: +45 53 88 99 84
-  timezone: Bopæl: Aalborg
+  timezone: "Bopæl: Aalborg"
   citizenship:
   website: # Include the full website URL, including "http://" or "https://".
   linkedin: msdahl
