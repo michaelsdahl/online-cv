@@ -14,8 +14,8 @@ sidebar:
 
   # Sidebar links
   email: michael@northland.dk
-  phone: +45 99 40 75 13
-  timezone:
+  phone: +45 53 88 99 84
+  timezone: Bopæl: Aalborg
   citizenship:
   website: # Include the full website URL, including "http://" or "https://".
   linkedin: msdahl
@@ -83,11 +83,11 @@ experiences:
     time: 2025 - nu
     company: <a href="https://børneulykkesfonden.dk/" target="_blank">Børneulykkesfonden</a>
 
-  - role: Bestyrelsesformand
+  - role: Bestyrelsesleder
     time: 2024 - nu
     company: <a href="https://musikkenshus.dk/" target="_blank">Fonden Musikkens Hus</a>
 
-  - role: Næstformand
+  - role: Vicebestyrelsesleder
     time: 2024 - nu
     company: <a href="https://musikkenshus.dk/aalborg-symfoniorkester" target="_blank">Aalborg Symfoniorkester</a>
 
@@ -95,11 +95,11 @@ experiences:
     time: 2022 - nu
     company: <a href="https://equalis.dk/" target="_blank">Tænketanken EQUALIS</a>
 
-  - role: Bestyrelsesformand
+  - role: Bestyrelsesleder
     time: 2017 - nu
     company: <a href="https://www.sparnordfonden.dk/" target="_blank">Spar Nord Fonden</a>
     details: |
-      Menigt medlem fra 2013, Næstformand fra 2016, Formand fra 2017.
+      Menigt medlem fra 2013, Vicebestyrelsesleder fra 2016, Bestyrelsesleder fra 2017.
 
 board-experience:
   title: Bestyrelseserfaringer
@@ -144,11 +144,11 @@ employment:
   info:
   - role: Professor II
     time: 2021 - nu
-    company: <a href="https://www.nhh.no/en/" target="_blank">NHH Norges Handelshøyskole, Bergen</a>
+    company: <a href="https://www.nhh.no/en/employees/faculty/michael-slavensky-dahl/" target="_blank">NHH Norges Handelshøyskole, Bergen</a>
 
   - role: Professor
     time: 2020 - nu
-    company: <a href="https://www.business.aau.dk/" target="_blank">Aalborg University Business School</a>
+    company: <a href="https://vbn.aau.dk/en/persons/msd" target="_blank">Aalborg University Business School</a>
 
   - role: Professor, Viceinstitutleder
     time: 2015 - 2020
