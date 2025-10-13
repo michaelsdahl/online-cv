@@ -14,7 +14,7 @@ sidebar:
 
   # Sidebar links
   email: md@msdahl.com
-  phone: +45 53 88 99 84
+  phone:
   timezone: "Aalborg"
   citizenship:
   website: # Include the full website URL, including "http://" or "https://".
@@ -32,7 +32,7 @@ sidebar:
   mastodon: # Please include your full Mastodon link here.
   hackerrank: # Please provide your HackerRank username.
   leetcode: # Please provide your LeetCode username.
-  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+  pdf: https://msdahl.net/cv/
 
   languages:
 

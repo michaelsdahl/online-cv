@@ -14,7 +14,7 @@ sidebar:
 
   # Sidebar links
   email: michael@northland.dk
-  phone: +45 99 40 75 13
+  phone:
   timezone: Europe/Copenhagen # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   citizenship: Danmark
   website: # Include the full website URL, including "http://" or "https://".
@@ -282,13 +282,13 @@ recommendations:
   list:
   - person: Yareli Perez
     email: perezyareli@example.com
-    phone: 012 345 6789
+    phone:
     role: General Director at example.com
     recommendation: |
       Alan Doe is a super employee!
   - person: Lara Henderson
     email: larah@example.com
-    phone: 012 345 6789
+    phone:
     role: General Director at example.com
     recommendation: |
       I would like to work with Alan Doe again!
