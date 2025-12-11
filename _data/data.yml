@@ -79,13 +79,11 @@ education:
 experiences:
   title: Bestyrelsesposter
   info:
-  - role: Bestyrelsesmedlem
-    time: 2026 - nu
-    company: <a href="https://portofhirtshals.dk/da/" target="_blank">Port of Hirtshals</a>
-
-  - role: Bestyrelsesmedlem
-    time: 2025 - nu
-    company: <a href="https://børneulykkesfonden.dk/" target="_blank">Børneulykkesfonden</a>
+  - role: Bestyrelsesleder
+    time: 2017 - nu
+    company: <a href="https://www.sparnordfonden.dk/" target="_blank">Spar Nord Fonden</a>
+    details: |
+      Menigt medlem fra 2013, Vicebestyrelsesleder fra 2016, Bestyrelsesleder fra 2017.
 
   - role: Bestyrelsesleder
     time: 2024 - nu
@@ -96,14 +94,16 @@ experiences:
     company: <a href="https://musikkenshus.dk/aalborg-symfoniorkester" target="_blank">Aalborg Symfoniorkester</a>
 
   - role: Bestyrelsesmedlem
+    time: 2026 - nu
+    company: <a href="https://portofhirtshals.dk/da/" target="_blank">Port of Hirtshals</a>
+
+  - role: Bestyrelsesmedlem
+    time: 2025 - nu
+    company: <a href="https://børneulykkesfonden.dk/" target="_blank">Børneulykkesfonden</a>
+
+  - role: Bestyrelsesmedlem
     time: 2022 - nu
     company: <a href="https://equalis.dk/" target="_blank">Tænketanken EQUALIS</a>
-
-  - role: Bestyrelsesleder
-    time: 2017 - nu
-    company: <a href="https://www.sparnordfonden.dk/" target="_blank">Spar Nord Fonden</a>
-    details: |
-      Menigt medlem fra 2013, Vicebestyrelsesleder fra 2016, Bestyrelsesleder fra 2017.
 
 board-experience:
   title: Bestyrelseserfaringer
