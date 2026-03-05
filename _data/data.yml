@@ -15,7 +15,7 @@ sidebar:
   # Sidebar links
   email: md@msdahl.com
   phone:
-  timezone: "Mobil med bopæl i Aalborg"
+  timezone:
   citizenship:
   website: # Include the full website URL, including "http://" or "https://".
   linkedin: msdahl
@@ -80,12 +80,6 @@ experiences:
   title: Bestyrelsesposter
   info:
   - role: Bestyrelsesleder
-    time: 2013 - nu
-    company: <a href="https://www.sparnordfonden.dk/" target="_blank">Spar Nord Fonden</a>
-    details: |
-      Menigt medlem fra 2013, Vicebestyrelsesleder fra 2016, Bestyrelsesleder fra 2017.
-
-  - role: Bestyrelsesleder
     time: 2024 - nu
     company: <a href="https://musikkenshus.dk/" target="_blank">Fonden Musikkens Hus</a>
 
@@ -114,6 +108,12 @@ experiences:
 board-experience:
   title: Bestyrelseserfaringer
   info:
+  - role: Bestyrelsesleder
+    time: 2013 - 2026
+    company: <a href="https://www.sparnordfonden.dk/" target="_blank">Spar Nord Fonden</a>
+    details: |
+      Menigt medlem fra 2013, Vicebestyrelsesleder fra 2016, Bestyrelsesleder fra 2017.
+
   - role: Bestyrelsesmedlem
     time: 2020 - 2025
     company: NOVI Innovation A/S
@@ -158,7 +158,7 @@ employment:
     time: 2021 - nu
     company: <a href="https://www.nhh.no/en/employees/faculty/michael-slavensky-dahl/" target="_blank">NHH Norges Handelshøyskole, Bergen</a>
 
-  - role: Professor
+  - role: Professor, Viceinstitutleder
     time: 2020 - nu
     company: <a href="https://vbn.aau.dk/en/persons/msd" target="_blank">Aalborg University Business School</a>
 
