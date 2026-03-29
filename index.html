@@ -1,30 +1,633 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Slavensky Dahl</title>
+  <meta name="description" content="Professionelt bestyrelsesmedlem og professor">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    :root {
+      --serif: 'Source Serif 4', 'Georgia', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --accent: #2c4a4e;
+      --accent-light: #3d6366;
+      --text: #1a1a1a;
+      --text-secondary: #4a4a4a;
+      --text-tertiary: #7a7a7a;
+      --text-muted: #a0a0a0;
+      --bg: #fafaf8;
+      --border: #e0ddd8;
+      --border-light: #eceae6;
+      --max-width: 760px;
+    }
 
-{% include career-profile.html %}
+    html {
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
 
-{% unless site.data.data.sidebar.education %}
-  {% include education.html %}
-{% endunless %}
+    body {
+      font-family: var(--sans);
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+      padding: 0 2rem;
+    }
 
-{% include experiences.html %}
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
 
-{% include board-experience.html %}
+    a:hover {
+      color: var(--accent-light);
+    }
 
-{% include board-competencies.html %}
+    /* ── Hero ── */
 
-{% include employment.html %}
+    .hero {
+      max-width: var(--max-width);
+      margin: 5rem auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 3rem;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
 
-{% include certifications.html %}
+    .hero-text {
+      flex: 1;
+      min-width: 0;
+    }
 
-{% include projects.html %}
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: 2.25rem;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
 
-{% include oss-contributions.html %}
+    .hero .tagline {
+      font-family: var(--sans);
+      font-size: 0.9375rem;
+      font-weight: 400;
+      color: var(--text-tertiary);
+      letter-spacing: 0.02em;
+      margin-bottom: 1.75rem;
+    }
 
-{% include publications.html %}
+    .contact-row {
+      display: flex;
+      gap: 1.75rem;
+      flex-wrap: wrap;
+      font-size: 0.8125rem;
+      font-weight: 400;
+      color: var(--text-tertiary);
+    }
 
-{% include recommendations.html %}
+    .contact-row a {
+      color: var(--text-tertiary);
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 1px;
+      transition: color 0.2s, border-color 0.2s;
+    }
 
-{% include skills.html %}
+    .contact-row a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .contact-row span {
+      color: var(--border);
+      user-select: none;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 4px;
+      object-fit: cover;
+      flex-shrink: 0;
+      filter: grayscale(15%);
+    }
+
+    /* ── Content ── */
+
+    .content {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding-bottom: 5rem;
+    }
+
+    /* ── Sections ── */
+
+    .section {
+      padding: 2.75rem 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .section:last-child {
+      border-bottom: none;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    /* ── Profile ── */
+
+    .profile-text {
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+      line-height: 1.85;
+    }
+
+    .profile-text p + p {
+      margin-top: 0.9rem;
+    }
+
+    /* ── Items (board positions, experience, employment) ── */
+
+    .item {
+      margin-bottom: 1.35rem;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1.5rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .item-role {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .item-time {
+      font-size: 0.8125rem;
+      font-weight: 300;
+      color: var(--text-muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+      letter-spacing: 0.01em;
+    }
+
+    .item-company {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+    }
+
+    .item-company a {
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .item-company a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .item-details {
+      font-size: 0.8125rem;
+      color: var(--text-tertiary);
+      line-height: 1.6;
+      margin-top: 0.2rem;
+    }
+
+    .item-details a {
+      color: var(--text-tertiary);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .item-details a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    /* ── Flagship roles ── */
+
+    .item--flagship {
+      padding: 1rem 0;
+      margin-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .item--flagship:first-child {
+      padding-top: 0;
+    }
+
+    .item--flagship .item-role {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .item--flagship .item-company {
+      font-size: 0.9375rem;
+    }
+
+    /* ── Strategic value / competencies ── */
+
+    .strategic-item {
+      margin-bottom: 1.25rem;
+    }
+
+    .strategic-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .strategic-area {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 0.15rem;
+    }
+
+    .strategic-detail {
+      font-size: 0.875rem;
+      color: var(--text-tertiary);
+      line-height: 1.6;
+    }
+
+    /* ── Education ── */
+
+    .edu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .edu-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .edu-degree {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .edu-school {
+      font-size: 0.8125rem;
+      color: var(--text-tertiary);
+    }
+
+    .edu-school a {
+      color: var(--text-tertiary);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .edu-school a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .edu-year {
+      font-size: 0.8125rem;
+      font-weight: 300;
+      color: var(--text-muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* ── Responsive ── */
+
+    @media (max-width: 600px) {
+      body {
+        padding: 0 1.25rem;
+      }
+
+      .hero {
+        margin-top: 3rem;
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+      }
+
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+
+      .avatar {
+        width: 90px;
+        height: 90px;
+      }
+
+      .item-header {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .item-time {
+        order: -1;
+        margin-bottom: 0.05rem;
+      }
+
+      .edu-item {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .edu-year {
+        order: -1;
+      }
+
+      .contact-row {
+        gap: 1rem;
+      }
+    }
+
+    /* ── Print ── */
+
+    @media print {
+      body {
+        font-size: 11pt;
+        padding: 0;
+        background: #fff;
+      }
+
+      .hero {
+        margin-top: 0;
+      }
+
+      .section {
+        padding: 1.25rem 0;
+        break-inside: avoid;
+      }
+
+      a {
+        color: var(--text);
+      }
+
+      .avatar {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Michael Slavensky Dahl</h1>
+      <p class="tagline">Professionelt bestyrelsesmedlem</p>
+      <div class="contact-row">
+        <a href="mailto:md@msdahl.com">md@msdahl.com</a>
+        <span>&middot;</span>
+        <a href="https://www.linkedin.com/in/msdahl" target="_blank" rel="noopener">LinkedIn</a>
+        <span>&middot;</span>
+        <a href="https://msdahl.net/cv/" target="_blank" rel="noopener">Akademisk CV</a>
+      </div>
+    </div>
+    <img src="data:image/jpeg;base64,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" alt="Michael Slavensky Dahl" class="avatar">
+  </header>
+
+  <main class="content">
+
+    <!-- Profil -->
+    <section class="section">
+      <h2 class="section-title">Profil</h2>
+      <div class="profile-text">
+        <p>Jeg er en visionær og værdidrevet bestyrelsesleder med stærke strategiske og analytiske kompetencer. Jeg arbejder struktureret, reflekteret og målrettet med at skabe værdi gennem professionelt bestyrelsesarbejde. Mit brede sæt af kompetence giver mig et solidt overblik og en evne til at navigere sikkert i komplekse og foranderlige situationer.</p>
+        <p>Jeg er rolig, humoristisk og lyttende med høj integritet og stor respekt for andres perspektiver og fagligheder. Jeg arbejder ud fra, at samarbejde, tillid og fælles retning er fundamentet for den værdi, en bestyrelse kan skabe.</p>
+        <p>Gennem de seneste mere end ti år har jeg været aktiv i en række bestyrelser som medlem og bestyrelsesleder. Jeg har derfor indgående erfaring med de centrale processer, der kendetegner en velfungerende og strategisk bestyrelse – herunder governance, strategi, evaluering, rekruttering og succession.</p>
+      </div>
+    </section>
+
+    <!-- Bestyrelsesposter -->
+    <section class="section">
+      <h2 class="section-title">Bestyrelsesposter</h2>
+
+      <div class="item item--flagship">
+        <div class="item-header">
+          <span class="item-role">Bestyrelsesleder</span>
+          <span class="item-time">2024 – nu</span>
+        </div>
+        <div class="item-company"><a href="https://musikkenshus.dk/" target="_blank" rel="noopener">Fonden Musikkens Hus</a></div>
+      </div>
+
+      <div class="item item--flagship">
+        <div class="item-header">
+          <span class="item-role">Bestyrelsesleder</span>
+          <span class="item-time">2024 – nu</span>
+        </div>
+        <div class="item-company"><a href="https://musikkenshus.dk/aalborg-symfoniorkester" target="_blank" rel="noopener">Aalborg Symfoniorkester</a></div>
+        <div class="item-details">Vicebestyrelsesleder fra 2024, Bestyrelsesleder fra 2026.</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Bestyrelsesmedlem</span>
+          <span class="item-time">2026 – nu</span>
+        </div>
+        <div class="item-company"><a href="https://aalborgforsyning.dk/vores-organisation/selskaber/" target="_blank" rel="noopener">Aalborg Forsyning A/S</a></div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Bestyrelsesmedlem</span>
+          <span class="item-time">2026 – nu</span>
+        </div>
+        <div class="item-company"><a href="https://portofhirtshals.dk/da/" target="_blank" rel="noopener">Port of Hirtshals</a></div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Bestyrelsesmedlem</span>
+          <span class="item-time">2026 – nu</span>
+        </div>
+        <div class="item-company"><a href="https://uggerly.dk" target="_blank" rel="noopener">Uggerly Installation</a></div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Bestyrelsesmedlem</span>
+          <span class="item-time">2025 – nu</span>
+        </div>
+        <div class="item-company"><a href="https://børneulykkesfonden.dk/" target="_blank" rel="noopener">Børneulykkesfonden</a></div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Bestyrelsesmedlem</span>
+          <span class="item-time">2022 – nu</span>
+        </div>
+        <div class="item-company"><a href="https://equalis.dk/" target="_blank" rel="noopener">Tænketanken EQUALIS</a></div>
+      </div>
+    </section>
+
+    <!-- Bestyrelseserfaringer -->
+    <section class="section">
+      <h2 class="section-title">Bestyrelseserfaringer</h2>
+
+      <div class="item item--flagship">
+        <div class="item-header">
+          <span class="item-role">Bestyrelsesleder</span>
+          <span class="item-time">2013 – 2026</span>
+        </div>
+        <div class="item-company"><a href="https://nordjyllandsfonden.dk" target="_blank" rel="noopener">Spar Nord Fonden (nu Nordjyllandsfonden)</a></div>
+        <div class="item-details">Menigt medlem fra 2013, Vicebestyrelsesleder fra 2016, Bestyrelsesleder fra 2017.</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Bestyrelsesmedlem</span>
+          <span class="item-time">2020 – 2025</span>
+        </div>
+        <div class="item-company">NOVI Innovation A/S</div>
+        <div class="item-details">Venture- og kapitalfond ejet af bl.a. <a href="https://novi.dk/" target="_blank" rel="noopener">NOVI Ejendomsfond</a> og <a href="https://www.sparnordfonden.dk/" target="_blank" rel="noopener">Spar Nord Fonden</a>.</div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Bestyrelsesmedlem</span>
+          <span class="item-time">2017 – 2025</span>
+        </div>
+        <div class="item-company"><a href="https://rigmornielsensfond.dk/" target="_blank" rel="noopener">Rigmor Nielsens Fond</a></div>
+      </div>
+    </section>
+
+    <!-- Strategisk værdi -->
+    <section class="section">
+      <h2 class="section-title">Strategisk værdi og kompetencer</h2>
+
+      <div class="strategic-item">
+        <div class="strategic-area">Ledelse af erhvervsdrivende fonde</div>
+        <div class="strategic-detail">Governance for fonde og generel corporate governance</div>
+      </div>
+
+      <div class="strategic-item">
+        <div class="strategic-area">Professionalisering af bestyrelsesprocesser</div>
+        <div class="strategic-detail">Kompetencekortlægning og succession</div>
+      </div>
+
+      <div class="strategic-item">
+        <div class="strategic-area">Økonomi og investeringer</div>
+        <div class="strategic-detail">Dybe kompetencer omkring økonomi, investeringer og strategisk udvikling</div>
+      </div>
+
+      <div class="strategic-item">
+        <div class="strategic-area">Samarbejde med direktion</div>
+        <div class="strategic-detail">Udvikling af samarbejde med direktion og organisation, herunder rekruttering af direktør og nøglepersoner</div>
+      </div>
+
+      <div class="strategic-item">
+        <div class="strategic-area">Bestyrelsesledelse</div>
+        <div class="strategic-detail">Fokus på optimering af samspil mellem alle kompetencer i bestyrelsen</div>
+      </div>
+
+      <div class="strategic-item">
+        <div class="strategic-area">Stakeholder management</div>
+        <div class="strategic-detail">Ledelse af samarbejde med centrale stakeholders, eks. mellem ejerfond og datterselskab</div>
+      </div>
+    </section>
+
+    <!-- Ansættelser -->
+    <section class="section">
+      <h2 class="section-title">Ansættelser</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Professor II</span>
+          <span class="item-time">2021 – nu</span>
+        </div>
+        <div class="item-company"><a href="https://www.nhh.no/en/employees/faculty/michael-slavensky-dahl/" target="_blank" rel="noopener">NHH Norges Handelshøyskole, Bergen</a></div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Professor, Viceinstitutleder</span>
+          <span class="item-time">2020 – nu</span>
+        </div>
+        <div class="item-company"><a href="https://vbn.aau.dk/en/persons/msd" target="_blank" rel="noopener">Aalborg University Business School</a></div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Professor, Viceinstitutleder</span>
+          <span class="item-time">2015 – 2020</span>
+        </div>
+        <div class="item-company"><a href="https://mgmt.au.dk/" target="_blank" rel="noopener">Aarhus Universitet, Institut for Virksomhedsledelse</a></div>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <span class="item-role">Professor</span>
+          <span class="item-time">2010 – 2015</span>
+        </div>
+        <div class="item-company"><a href="https://www.business.aau.dk/" target="_blank" rel="noopener">Aalborg Universitet, Institut for Økonomi og Ledelse</a></div>
+      </div>
+    </section>
+
+    <!-- Uddannelse -->
+    <section class="section">
+      <h2 class="section-title">Uddannelse</h2>
+
+      <div class="edu-item">
+        <div class="edu-left">
+          <div class="edu-degree">Bestyrelsesarbejde i Erhvervsfonde</div>
+          <div class="edu-school"><a href="https://www.cbsbestyrelsesuddannelserne.dk/" target="_blank" rel="noopener">CBS Bestyrelsesuddannelserne</a></div>
+        </div>
+        <span class="edu-year">2020</span>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-left">
+          <div class="edu-degree">Bestyrelsesarbejde i Finansielle Virksomheder</div>
+          <div class="edu-school"><a href="https://www.cbsbestyrelsesuddannelserne.dk/" target="_blank" rel="noopener">CBS Bestyrelsesuddannelserne</a></div>
+        </div>
+        <span class="edu-year">2019</span>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-left">
+          <div class="edu-degree">Ph.D. innovations- og industriøkonomi</div>
+          <div class="edu-school"><a href="https://www.aau.dk/" target="_blank" rel="noopener">Aalborg Universitet</a></div>
+        </div>
+        <span class="edu-year">2004</span>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-left">
+          <div class="edu-degree">Cand.oecon.</div>
+          <div class="edu-school"><a href="https://www.aau.dk/" target="_blank" rel="noopener">Aalborg Universitet</a></div>
+        </div>
+        <span class="edu-year">1999</span>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
