@@ -1,0 +1,19 @@
+# The public profile is maintained directly in index.html.
+title: Michael Slavensky Dahl · Bestyrelsesleder
+url: 'https://msdahl.com'
+baseurl: ''
+description: Michael Slavensky Dahl — bestyrelsesleder med fokus på strategi, governance og samarbejde.
+encoding: utf-8
+
+# Do not publish the retired CV theme, screenshots or development files.
+exclude:
+  - assets/images
+  - assets/plugins
+  - README.md
+  - LICENSE.md
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml
+
+port: 4000
+host: 0.0.0.0
