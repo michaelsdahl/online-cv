@@ -12,7 +12,8 @@ Det separate bestyrelses-CV skal ikke tilføjes til repositoryet eller hjemmesid
 
 Gamle temabilleder og tredjepartsaktiver i `assets/images` og `assets/plugins`
 er udelukket fra publicering via `_config.yml`, ligesom denne dokumentation
-og udviklingsfiler. Historiske versioner findes fortsat i Git-historikken.
+og udviklingsfiler. Den gamle CV-historik er fjernet fra repositoryets branches; nye versioner
+bygger videre fra den rensede bestyrelsesprofil.
 
 ## Lokal forhåndsvisning
 
